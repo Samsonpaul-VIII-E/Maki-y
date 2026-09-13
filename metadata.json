@@ -1,0 +1,11 @@
+{
+  "name": "Remix Maki — Zero-Knowledge P2P Generative AI \u0026 Ghost Mesh",
+  "description": "Zero-knowledge, local-first generative AI application, SatoshiStream Ad-to-Earn Bitcoin Lightning module, Uncensored AI Hub, 250 TOPS Ghost Mesh, and Quantum Tunneling P2P.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

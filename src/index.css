@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Fira Code', monospace;
+    background-color: #030804;
+    color: #00FF66;
+  }
+}
+
+/* CRT Scanline Overlay */
+.crt-overlay {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.03)
+  );
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+}
+
+/* Phosphor Glow */
+.glow-green {
+  text-shadow: 0 0 6px rgba(0, 255, 102, 0.6), 0 0 14px rgba(0, 255, 102, 0.25);
+}
+
+.glow-box-green {
+  box-shadow: 0 0 15px rgba(0, 255, 102, 0.2), inset 0 0 15px rgba(0, 255, 102, 0.05);
+}
+
+.glow-box-amber {
+  box-shadow: 0 0 15px rgba(255, 170, 0, 0.2), inset 0 0 15px rgba(255, 170, 0, 0.05);
+}
+
+/* Custom terminal scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #020b04;
+}
+::-webkit-scrollbar-thumb {
+  background: #00FF66;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #33ff88;
+}
