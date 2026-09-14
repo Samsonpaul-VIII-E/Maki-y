@@ -1,0 +1,16 @@
+services:
+  app:
+    image: node:22-slim
+    working_dir: /app
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+      - __VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS
+    env_file:
+      - /run/base44/app.env
+    volumes:
+      - ./:/app
+    command: sh -c "npm install && npx tsx server.ts"
+    restart: unless-stopped
